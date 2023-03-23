@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="order">
+        <div class="container">
+            <form id="orderForm" name="orderForm" style="transform: none">
+                <div class="row">
+                    <div class="col-lg-8" id="mainContent" style="
+                position: relative;
+                overflow: visible;
+                box-sizing: border-box;
+                min-height: 1px;
+              ">
+                        <div class="theiaStickySidebar" style="
+                  padding-top: 1px;
+                  padding-bottom: 1px;
+                  position: static;
+                  transform: none;
+                ">
+                            <h2 class="head">Core Components</h2>
+                            <div id="optionGroup3" class="row option-box">
+                                <div class="price-box"><sup>$</sup>150/location</div>
+                                <div class="option-box-header">
+                                    <h3>Locations</h3>
+                                    <p>
+                                        At how many physical addresses do you require service?
+                                    </p>
+                                </div>
+
+                                <div class="cal-div">
+                                    <div id="wrapper">
+                                        <input type="range" min="0" max="20" value="1" step="1" class='range'
+                                            id="range1">
+
+                                    </div>
+                                    <div class="slider-value">
+                                        <input class="slider-value-span" id="value1" type="number" value="1">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div id="optionGroup1" class="row option-box">
+                                <div class="price-box"><sup>$</sup>49/workstation</div>
+                                <div class="option-box-header">
+                                    <h3>Workstations</h3>
+                                    <p>How many workstations or laptops?</p>
+                                    <span class="option-box-link hover-help" data-toggle="tooltip" data-placement="top"
+                                        title=""
+                                        data-original-title="A workstation is a complete computer system (computer, monitor, peripherals, etc.), or laptop, used by an end-user, such as an employee.">
+                                        What is a workstation?</span>
+                                </div>
+                                <div class="cal-div">
+                                    <div id="wrapper">
+                                        <input type="range" min="0" max="500" value="10" step="1" class='range'
+                                            id="range2">
+
+                                    </div>
+                                    <div class="slider-value">
+                                        <input class="slider-value-span" id="value2" type="number" value="10">
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <h5>Optional:</h5>
+                                </div>
+
+                                <div class="extra-div">
+                                    <div class="col-md-4 col-sm-6">
+                                        <label class="cbx" for="option5Single">
+                                            <input type="checkbox" class="checker">
+                                            <span id="option5SingleTitle" data-toggle="tooltip" data-placement="top"
+                                                title=""
+                                                data-original-title="Cloud Backups copy your data to secure storage facilities in a datacenter every few hours to protect it from hardware failures, malware, ransomware, human error, theft, and natural disasters.">
+                                                Cloud Backup (+$12)
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="cal-div">
+                                        <div id="wrapper">
+                                            <input type="range" min="0" max="10" value="0" step="1" class='range-new'
+                                                id="range3">
+
+                                        </div>
+                                        <div class="slider-value">
+                                            <input class="slider-value-span" id="value3" type="number" value="0">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="extra-div">
+                                    <div class="col-md-4 col-sm-6">
+
+                                        <label class="cbx" for="option7Single">
+                                            <input type="checkbox" class="checker">
+                                            <span id="option7SingleTitle" data-toggle="tooltip" data-placement="bottom"
+                                                title=""
+                                                data-original-title="Disk Encryption protects the contents of your storage disk from being read, in the event of loss, theft, or misuse.">
+                                                Disk Encryption (+$9)
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="cal-div">
+                                        <div id="wrapper">
+                                            <input type="range" min="0" max="10" value="0" step="1" class='range-new'
+                                                id="range4">
+
+                                        </div>
+                                        <div class="slider-value">
+                                            <input class="slider-value-span" id="value4" type="number" value="0">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="optionGroup2" class="row option-box">
+                                <div class="price-box"><sup>$</sup>250/server</div>
+                                <div class="option-box-header">
+                                    <h3>Azure Windows Servers</h3>
+                                    <p>How many Azure Windows servers?</p>
+
+                                </div>
+                                <div class="cal-div">
+                                    <div id="wrapper">
+                                        <input type="range" min="0" max="20" value="1" step="1" class='range'
+                                            id="range5">
+
+                                    </div>
+                                    <div class="slider-value">
+                                        <input class="slider-value-span" id="value5" type="number" value="1">
+                                    </div>
+
+
+                                    <span class="option-box-link hover-help" data-toggle="tooltip" data-placement="top"
+                                        title=""
+                                        data-original-title="A server is a central computer that manages and sets policies for your workstations. Some third-party vendors also implement their own server for their applications.">
+                                        What is a server?
+                                    </span>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <h5>Optional:</h5>
+                                </div>
+
+                                <div class="extra-div">
+                                    <div class="col-md-4 col-sm-6">
+                                        <label class="cbx" for="option6Single">
+                                            <input type="checkbox" class="checker">
+                                            <span id="option6SingleTitle" data-toggle="tooltip" data-placement="top"
+                                                title=""
+                                                data-original-title="Cloud Backups copy your data to secure storage facilities in a datacenter every few hours to protect it from hardware failures, malware, ransomware, human error, theft, and natural disasters.">
+                                                Cloud Backup (+$100)
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="cal-div">
+                                        <div id="wrapper">
+                                            <input type="range" min="0" max="1" value="0" step="1" class='range-new'
+                                                id="range6">
+
+                                        </div>
+                                        <div class="slider-value">
+                                            <input class="slider-value-span" id="value6" type="number" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <h2>Additional Components</h2>
+                            <div id="optionGroup8" class="row option-box">
+                                <div class="price-box"><sup>$</sup>10/device</div>
+                                <div class="option-box-header">
+                                    <h3>Mobile Device Management</h3>
+                                    <p>How many Mobile Devices?</p>
+                                    <span class="option-box-link hover-help" data-toggle="tooltip" data-placement="top"
+                                        title=""
+                                        data-original-title="A mobile device is a non-stationary device with a mobile-oriented Operating System, such as an iPad.">
+                                        What is a mobile device?</span>
+                                </div>
+                                <div class="cal-div">
+                                    <div id="wrapper">
+                                        <input type="range" min="0" max="100" value="0" step="1" class='range'
+                                            id="range7">
+
+                                    </div>
+                                    <div class="slider-value">
+                                        <input class="slider-value-span" id="value7" type="number" value="0">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="optionGroup4" class="row option-box">
+                                <div class="price-box"><sup>$</sup>9/user</div>
+                                <div class="option-box-header">
+                                    <h3>Bitstream Managed Remote Desktop (BMRD)</h3>
+                                    <p>How many remote desktop service licenses do you need?</p>
+                                    <span class="option-box-link hover-help" data-toggle="tooltip" data-placement="top"
+                                        title=""
+                                        data-original-title="Bitstream Managed Remote Desktop (BMRD) is an optional managed service that allows you to remotely access your workstation from anywhere in the world.">
+                                        What is BMRD?</span>
+                                </div>
+                                <div class="cal-div">
+                                    <div id="wrapper">
+                                        <input type="range" min="0" max="100" value="0" step="1" class='range'
+                                            id="range8">
+
+                                    </div>
+                                    <div class="slider-value">
+                                        <input class="slider-value-span" id="value8" type="number" value="0">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 result-div">
+
+                            <h3>Estimated Monthly Cost</h3>
+                            <div class='pricing'>
+                                <div class="price-module">
+                                    <label>Location x <span class="quantity">1</span></label>
+                                    <label class="bold">$ 150.00</label>
+                                </div>
+                                <div class="price-module">
+                                    <label>Workstations x <span class="quantity">10</span></label>
+                                    <label class="bold">$ 490.00</label>
+                                </div>
+                                <div class="price-module">
+                                    <label>Azure Servers x <span class="quantity">1</span></label>
+                                    <label class="bold">$ 250.00</label>
+                                </div>
+
+                                <div class="total">
+                                    <div class="price-module total-div">
+                                        <label class="bold">Total</label>
+                                        <div class="unit">
+                                            <label class="bold">$ 250.00</label>
+                                            <br>
+                                            <label class="bold">/ month</label>
+                                       
+                                        </div>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="asset.js"></script>
+</body>
+
+</html>
