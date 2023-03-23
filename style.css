@@ -662,13 +662,16 @@ input[type="range"]::-moz-range-thumb {
 
   .result-div {
     border: 1px solid #ddd;
-    margin: 76px 30px;
-    min-width: 330px;
-    max-height: 350px;
+    margin: 46px 30px;
+    position: fixed;
+    transform: translateY(90px);
+    left: 938.71px;
+    top: 0px;
+    width: 329.997px;
 }
 
   .pricing{
-    margin: 40px 30px;
+    margin: 50px 30px;
     min-width: 100px;
 
   }
@@ -689,6 +692,7 @@ input[type="range"]::-moz-range-thumb {
     font-weight: 600;
     color: #555555;
   }
+
 .total{
    
     border-top: 3px dotted #ddd;

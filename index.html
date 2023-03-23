@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://svgshare.com/i/rQU.svg">
+    
+    <title>Najmee - Your IT partner</title>
 </head>
 
 <body>
@@ -77,7 +83,7 @@
                                 <div class="extra-div">
                                     <div class="col-md-4 col-sm-6">
                                         <label class="cbx" for="option5Single">
-                                            <input type="checkbox" class="checker">
+                                            <input type="checkbox" class="checker" id="cloud_check">
                                             <span id="option5SingleTitle" data-toggle="tooltip" data-placement="top"
                                                 title=""
                                                 data-original-title="Cloud Backups copy your data to secure storage facilities in a datacenter every few hours to protect it from hardware failures, malware, ransomware, human error, theft, and natural disasters.">
@@ -101,7 +107,7 @@
                                     <div class="col-md-4 col-sm-6">
 
                                         <label class="cbx" for="option7Single">
-                                            <input type="checkbox" class="checker">
+                                            <input type="checkbox" class="checker" id="disk_check">
                                             <span id="option7SingleTitle" data-toggle="tooltip" data-placement="bottom"
                                                 title=""
                                                 data-original-title="Disk Encryption protects the contents of your storage disk from being read, in the event of loss, theft, or misuse.">
@@ -233,16 +239,18 @@
                             <h3>Estimated Monthly Cost</h3>
                             <div class='pricing'>
                                 <div class="price-module">
-                                    <label>Location x <span class="quantity">1</span></label>
-                                    <label class="bold">$ 150.00</label>
+                                    <label>Location x <span class="quantity" id="location_number">1</span></label>
+                                    <label class="bold" id="location_price">$ 150.00</label>
                                 </div>
                                 <div class="price-module">
-                                    <label>Workstations x <span class="quantity">10</span></label>
-                                    <label class="bold">$ 490.00</label>
+                                    <label>Workstations x <span class="quantity" id="station_number">10</span></label>
+                                    <label class="bold" id="station_price">$ 490.00</label>
                                 </div>
+                                <div class="price-module" id="cloud_div"> </div>
+                                <div class="price-module" id="disk_div"> </div>
                                 <div class="price-module">
-                                    <label>Azure Servers x <span class="quantity">1</span></label>
-                                    <label class="bold">$ 250.00</label>
+                                    <label>Azure Servers x <span class="quantity" id="server_number">1</span></label>
+                                    <label class="bold" id="server_price">$ 250.00</label>
                                 </div>
 
                                 <div class="total">
