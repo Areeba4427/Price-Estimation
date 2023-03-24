@@ -38,6 +38,10 @@ function value_change() {
 
 }
 
+function total_calculation(){
+
+    
+}
 
 function dynamic_div() {
     if (this.id == 'range1' || this.id == "value1") {
@@ -55,13 +59,7 @@ function dynamic_div() {
 
         document.getElementById("cloud_check").checked = true;
 
-        //dynamic div creation for cloud option.
-        //   <div class="price-module">
-        // <label>Azure Servers x <span class="quantity" id="server_number">1</span></label>
-        /* <label class="bold" id="server_price">$ 250.00</label> */
-        // </div>
         var cloud = document.getElementById("cloud_div");
-
         if ($("#cloud_div").find("label").length !== 0) {
 
             while (cloud.firstChild) {
@@ -86,6 +84,7 @@ function dynamic_div() {
 
         cloud.appendChild(div_new);
         cloud.appendChild(price);
+        cloud.classList.remove("invisible");
 
         if (this.value == 0) {
             if ($("#cloud_div").find("label").length !== 0) {
@@ -94,7 +93,9 @@ function dynamic_div() {
                     cloud.removeChild(cloud.lastChild);
                 }
             }
+            cloud.classList.add("invisible");
         }
+       
     }
 
 
@@ -128,7 +129,7 @@ function dynamic_div() {
 
         disk.appendChild(div_new);
         disk.appendChild(price);
-
+        disk.classList.remove("invisible");
         if (this.value == 0) {
             if ($("#disk_div").find("label").length !== 0) {
 
@@ -136,7 +137,9 @@ function dynamic_div() {
                     disk.removeChild(disk.lastChild);
                 }
             }
+            disk.classList.add("invisible");
         }
+       
     }
 
 
@@ -148,6 +151,138 @@ function dynamic_div() {
         document.getElementById("server_price").textContent = formatter.format(total_price);
     }
 
+
+
+    else if (this.id == "range6" || this.id == "value6") {
+
+        document.getElementById("cloud_check_2").checked = true;
+
+        var cloud2 = document.getElementById("cloud_div_2");
+    
+        if ($("#cloud_div_2").find("label").length !== 0) {
+
+            while (cloud2.firstChild) {
+                cloud2.removeChild(cloud2.lastChild);
+            }
+        }
+
+
+        var div_new = document.createElement("label");
+        div_new.textContent = "Cloud Backup - Server x ";
+
+        var inner_div = document.createElement("span");
+        inner_div.textContent = this.value;
+        inner_div.setAttribute("id", "cloud2_number");
+        inner_div.setAttribute("class", "quantity");
+        div_new.appendChild(inner_div);
+
+        var price = document.createElement("label");
+        price.setAttribute("class", "bold");
+        price.setAttribute("id", "cloud2_price");
+        price.textContent = formatter.format(parseInt(this.value) * 100);
+
+        cloud2.appendChild(div_new);
+        cloud2.appendChild(price);
+        cloud2.classList.remove("invisible");
+
+        if (this.value == 0) {
+            if ($("#cloud_div_2").find("label").length !== 0) {
+
+                while (cloud2.firstChild) {
+                    cloud2.removeChild(cloud2.lastChild);
+                }
+            }
+            cloud2.classList.add("invisible");
+        }
+
+    }
+
+     else if (this.id == "range7" || this.id == "value7") {
+
+
+        var mobile = document.getElementById("mobile");
+    
+        if ($("#mobile").find("label").length !== 0) {
+
+            while (mobile.firstChild) {
+                mobile.removeChild(mobile.lastChild);
+            }
+        }
+
+
+        var div_new = document.createElement("label");
+        div_new.textContent = "Mobile Devices x ";
+
+        var inner_div = document.createElement("span");
+        inner_div.textContent = this.value;
+        inner_div.setAttribute("id", "mobile_number");
+        inner_div.setAttribute("class", "quantity");
+        div_new.appendChild(inner_div);
+
+        var price = document.createElement("label");
+        price.setAttribute("class", "bold");
+        price.setAttribute("id", "mobile_price");
+        price.textContent = formatter.format(parseInt(this.value) * 10);
+
+        mobile.appendChild(div_new);
+        mobile.appendChild(price);
+        mobile.classList.remove("invisible");
+        
+        if (this.value == 0) {
+            if ($("#mobile").find("label").length !== 0) {
+
+                while (mobile.firstChild) {
+                    mobile.removeChild(mobile.lastChild);
+                }
+            }
+            mobile.classList.add("invisible");
+        }
+     }
+
+
+     else {
+
+        var bit = document.getElementById("bitstream");
+    
+        if ($("#bitstream").find("label").length !== 0) {
+
+            while (bit.firstChild) {
+                bit.removeChild(bit.lastChild);
+            }
+        }
+
+
+        var div_new = document.createElement("label");
+        div_new.textContent = "BMRD Users x ";
+
+        var inner_div = document.createElement("span");
+        inner_div.textContent = this.value;
+        inner_div.setAttribute("id", "bit_number");
+        inner_div.setAttribute("class", "quantity");
+        div_new.appendChild(inner_div);
+
+        var price = document.createElement("label");
+        price.setAttribute("class", "bold");
+        price.setAttribute("id", "bit_price");
+        price.textContent = formatter.format(parseInt(this.value) * 9);
+
+        bit.appendChild(div_new);
+        bit.appendChild(price);
+        bit.classList.remove("invisible");
+        
+        if (this.value == 0) {
+            if ($("#bitstream").find("label").length !== 0) {
+
+                while (bit.firstChild) {
+                    bit.removeChild(bit.lastChild);
+                }
+            }
+            bit.classList.add("invisible");
+        }
+
+     }
+
+     total_calculation();
 }
 document.querySelectorAll('[id^="range"]').forEach(element => element.addEventListener("input", slider_change));
 document.querySelectorAll('[id^="value"]').forEach(element => element.addEventListener("change", value_change));
