@@ -39,8 +39,62 @@ function value_change() {
 }
 
 function total_calculation(){
-
+    // Number(formattedPrice.r eplace(/[^0-9.-]+/g,""));
+    var locationPrice = 0;
+    var stationPrice = 0;
+    var cloudPrice = 0;
+    var diskPrice = 0;
+    var serverPrice = 0;
+    var cloud2Price = 0;
+    var mobilePrice = 0;
+    var bitPrice = 0;
     
+    var locationElement = document.getElementById("location_price");
+    if (locationElement) {
+      locationPrice = Number(locationElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var stationElement = document.getElementById("station_price");
+    if (stationElement) {
+      stationPrice = Number(stationElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var cloudElement = document.getElementById("cloud_price");
+    if (cloudElement) {
+      cloudPrice = Number(cloudElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var diskElement = document.getElementById("disk_price");
+    if (diskElement) {
+      diskPrice = Number(diskElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var serverElement = document.getElementById("server_price");
+    if (serverElement) {
+      serverPrice = Number(serverElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var cloud2Element = document.getElementById("cloud2_price");
+    if (cloud2Element) {
+      cloud2Price = Number(cloud2Element.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var mobileElement = document.getElementById("mobile_price");
+    if (mobileElement) {
+      mobilePrice = Number(mobileElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var bitElement = document.getElementById("bit_price");
+    if (bitElement) {
+      bitPrice = Number(bitElement.textContent.replace(/[^0-9.-]+/g,""));
+    }
+    
+    var totalPrice = locationPrice + stationPrice + cloudPrice + diskPrice + serverPrice + cloud2Price + mobilePrice + bitPrice;
+    console.log(totalPrice);
+    
+ 
+   document.getElementById("resultant").textContent = formatter.format(totalPrice);
+   console.log(totalPrice);
 }
 
 function dynamic_div() {

@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.js"
     integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://svgshare.com/i/rQU.svg">
-    
     <title>Najmee - Your IT partner</title>
 </head>
 
 <body>
+    <div class="header">
+      <div class="left">
+        <a href="https://www.najmee.com/">
+            <img src="https://svgshare.com/i/rQU.svg" alt="Najmee">
+          </a>   
+      </div>
+      <div class="right">
+         <label class="phone">(201) 720-2121</label>
+         <label class="separator">|</label>
+         <label class="mail">info@najmee.com</label>
+      </div>
+        
+    </div>
     <div class="order">
         <div class="container">
             <form id="orderForm" name="orderForm" style="transform: none">
@@ -26,6 +37,7 @@
                 box-sizing: border-box;
                 min-height: 1px;
               ">
+              <h1 class="head big">Pricing Estimation Calculator</h1>
                         <div class="theiaStickySidebar" style="
                   padding-top: 1px;
                   padding-bottom: 1px;
@@ -259,7 +271,7 @@
                                     <div class="price-module total-div">
                                         <label class="bold">Total</label>
                                         <div class="unit">
-                                            <label class="bold">$ 250.00</label>
+                                            <label class="bold" id="resultant">$ 250.00</label>
                                             <br>
                                             <label class="bold">/ month</label>
                                        
