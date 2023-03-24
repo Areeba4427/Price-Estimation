@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://svgshare.com/i/rQU.svg">
     <title>Najmee - Your IT partner</title>
@@ -15,35 +15,33 @@
 
 <body>
     <div class="header">
-      <div class="left">
-        <a href="https://www.najmee.com/">
-            <img src="https://svgshare.com/i/rQU.svg" alt="Najmee">
-          </a>   
-      </div>
-      <div class="right">
-         <label class="phone">(201) 720-2121</label>
-         <label class="separator">|</label>
-         <label class="mail">info@najmee.com</label>
-      </div>
-        
+        <div class="left">
+            <a href="https://www.najmee.com/">
+                <img src="https://svgshare.com/i/rQU.svg" alt="Najmee">
+            </a>
+        </div>
+        <div class="right">
+            <label class="phone">(201) 720-2121</label>
+            <label class="separator">|</label>
+            <label class="mail">info@najmee.com</label>
+        </div>
+
     </div>
     <div class="order">
         <div class="container">
-            <form id="orderForm" name="orderForm" style="transform: none">
-                <div class="row">
+            <form id="orderForm">
+                <div class="row flex-big">
                     <div class="col-lg-8" id="mainContent" style="
-                position: relative;
-                overflow: visible;
-                box-sizing: border-box;
-                min-height: 1px;
-              ">
-              <h1 class="head big">Pricing Estimation Calculator</h1>
+                        position: relative;
+                        overflow: visible;
+                        box-sizing: border-box;
+                        min-height: 1px;
+                          ">
+                        <h1 class="head big">Pricing Estimation Calculator</h1>
                         <div class="theiaStickySidebar" style="
-                  padding-top: 1px;
-                  padding-bottom: 1px;
-                  position: static;
-                  transform: none;
-                ">
+                        padding-top: 1px;
+                        padding-bottom: 1px;
+                        position: static;">
                             <h2 class="head">Core Components</h2>
                             <div id="optionGroup3" class="row option-box">
                                 <div class="price-box"><sup>$</sup>150/location</div>
@@ -96,11 +94,7 @@
                                     <div class="col-md-4 col-sm-6">
                                         <label class="cbx" for="option5Single">
                                             <input type="checkbox" class="checker" id="cloud_check">
-                                            <span id="option5SingleTitle" data-toggle="tooltip" data-placement="top"
-                                                title=""
-                                                data-original-title="Cloud Backups copy your data to secure storage facilities in a datacenter every few hours to protect it from hardware failures, malware, ransomware, human error, theft, and natural disasters.">
-                                                Cloud Backup (+$12)
-                                            </span>
+                                            Cloud Backup (+$12)
                                         </label>
                                     </div>
                                     <div class="cal-div">
@@ -120,11 +114,8 @@
 
                                         <label class="cbx" for="option7Single">
                                             <input type="checkbox" class="checker" id="disk_check">
-                                            <span id="option7SingleTitle" data-toggle="tooltip" data-placement="bottom"
-                                                title=""
-                                                data-original-title="Disk Encryption protects the contents of your storage disk from being read, in the event of loss, theft, or misuse.">
-                                                Disk Encryption (+$9)
-                                            </span>
+                                            Disk Encryption (+$9)
+
                                         </label>
                                     </div>
                                     <div class="cal-div">
@@ -175,11 +166,8 @@
                                     <div class="col-md-4 col-sm-6">
                                         <label class="cbx" for="option6Single">
                                             <input type="checkbox" class="checker" id="cloud_check_2">
-                                            <span id="option6SingleTitle" data-toggle="tooltip" data-placement="top"
-                                                title=""
-                                                data-original-title="Cloud Backups copy your data to secure storage facilities in a datacenter every few hours to protect it from hardware failures, malware, ransomware, human error, theft, and natural disasters.">
-                                                Cloud Backup (+$100)
-                                            </span>
+                                            Cloud Backup (+$100)
+
                                         </label>
                                     </div>
                                     <div class="cal-div">
@@ -274,9 +262,9 @@
                                             <label class="bold" id="resultant">$ 250.00</label>
                                             <br>
                                             <label class="bold">/ month</label>
-                                       
+
                                         </div>
-                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
